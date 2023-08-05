@@ -1,0 +1,43 @@
+.fashion_background{
+    width: 100%;
+    height: 100vh;
+    /* Example */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(THRIFTBG.png);
+
+    background-size: cover;
+    background-position: center;
+}
+.heading{
+    width: 100%;
+    position: relative;
+    top: 20%;
+    transform: translateY(-50%);
+    text-align: center;
+
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    position:fixed;
+    top: 0;
+    width: 100%;
+  
+    border: 1px solid #e7e7e7;
+    /* background-color: #f3f3f3; */
+  
+  }
+  li{
+    display: inline;
+    float: left;
+    padding: 14px 16px;
+  }
+  li a{
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
