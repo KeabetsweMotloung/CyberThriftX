@@ -10,12 +10,12 @@
 .heading{
     width: 100%;
     position: relative;
-    top: 20%;
+    top: 450px;
     transform: translateY(-50%);
-    text-align: center;
+    text-align:center;
 
 }
-ul{
+.Navigation_Bar ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -40,4 +40,55 @@ ul{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    
   }
+
+  /* adds images and space  */
+  .aesthetic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 20px auto;
+    margin-right: 20px auto;
+    position: relative;
+    top: 300px;
+  }
+  
+  .image-container img {
+    max-width: 200px;
+    height: auto;
+  }
+  /* space between the actual images */
+  .image-container img:not(:last-child){
+    top: 20px;
+    margin-right: 100px;
+  }
+  
+  .links {
+    text-align: center;
+  }
+  
+  .links ul {
+    top: 300px;
+    position: relative;
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 10px;
+  }
+  
+  .links li a {
+    /* border: none; */
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+  }
+  
