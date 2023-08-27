@@ -20,21 +20,41 @@ ul{
 }
 li{
   display: inline;
-  float: left;
- 
+  float: right;
+ position: relative;
   padding: 14px 16px;
 }
 li a{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: green;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  transition: 0,3s ease;
+  background:black;
   
-  background: cyan;
-  /* text-align: center; */
-  padding: 20px 80px;
-  /* text-decoration: none; */
+  padding: 20px 60px;
+  text-decoration: none;
 }
+
+li a:hover,
+li a:active{
+  color: aqua;
+}
+
+li a:active ::after{
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: aqua;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+
+/* SCROLL BAR */
 ::-webkit-scrollbar{
   width: 20px;
 }
@@ -134,7 +154,10 @@ li a{
   }
   
 
-  /* header */
+  /* Cart logo */
+  .fa-solid fa-cart-shopping{
+    color: #ccc;
+  }
  
 
   
