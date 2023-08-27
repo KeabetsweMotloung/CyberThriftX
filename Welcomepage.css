@@ -34,22 +34,26 @@ li a{
   transition: 0,3s ease;
   background:black;
   
-  padding: 20px 60px;
+  padding: 40px 80px;
   text-decoration: none;
 }
 
+
+/* Apply color change on hover and active */
 li a:hover,
-li a:active{
+li a:active {
   color: aqua;
 }
 
-li a:active ::after{
+/* Add the underline-like effect when hovering and active */
+li a:active::after,
+li a:hover::after {
   content: "";
   width: 30%;
   height: 2px;
   background: aqua;
   position: absolute;
-  bottom: -4px;
+  bottom: -2px;
   left: 20px;
 }
 
@@ -79,20 +83,24 @@ li a:active ::after{
     background-position: center;
 
 }
-.head{
-    
-    width: 100%;
-    position: relative;
-    top: 20%;
-    transform: translateY(-50%);
-    text-align: center;
+/* Apply Y2K street art-inspired styles to the image */
+.head img {
+  max-height: 800px; /* Adjust the maximum height as needed */
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)); /* Add a drop shadow */
+  transition: transform 0.3s, filter 0.3s;
 }
-.head h2{
-    font-family: Geonica, sans-serif;
-    font-size: 120px;
+
+.head img:hover {
+  transform: scale(1.1); /* Zoom in slightly on hover */
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.7)); /* Increase the drop shadow on hover */
 }
 
 
+
+
+/* stays the same  */
   .main{
     width: 100%;
     position: relative;
