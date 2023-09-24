@@ -9,7 +9,7 @@
   border-radius: 15px;
 }
 
-
+/* Rest of your CSS... */
 * {
   margin: 0;
   padding: 0;
@@ -67,7 +67,7 @@ body {
   padding: 10px;
 }
 
-.button button {
+.button1 button {
   padding: 10px 20px;
   border: none;
   outline: none;
@@ -80,6 +80,10 @@ body {
   visibility: hidden;
   display: none;
 }
+
+
+
+
 
 
 *{

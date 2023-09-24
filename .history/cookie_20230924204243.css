@@ -62,7 +62,7 @@ body {
     color: beige;
 }
 
-.CookieImage.hide{
+.C.hide{
     opacity:0;
     transition: all 0.3s ease;
     visibility: hidden;

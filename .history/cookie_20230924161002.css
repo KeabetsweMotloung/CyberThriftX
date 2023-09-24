@@ -63,8 +63,6 @@ body {
 }
 
 .CookieImage.hide{
-    opacity:0;
-    transition: all 0.3s ease;
-    visibility: hidden;
+    opacity
     display: none;
 }

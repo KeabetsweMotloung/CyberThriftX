@@ -16,19 +16,11 @@
     </head>
 
     <body>
-        <div class="CookieImage">
-            <a href="#"><img src="cookie.png" alt="Cyber cookie image"></a>
-        
-            <div class="cookieContent">
-                <header>Cyber Cookie Consent</header>
-                <p>We use essential cookies to make our site work. With your consent, we may also use non-essential cookies to improve user experience and analyze website traffic. By clicking “Accept,“ you agree to our website's cookie use as described in our Cookie Policy. You can change your cookie settings at any time by clicking “Preferences.”</p>
-        
-                <div class="button1">
-                    <button class="Agree">I Agree</button>
-                    <a href="#" class="Learn">Learn More</a>
-                </div>
+        <div id="cookie-container">
+            <div id="cookie-consent">
+                <iframe src="cookie.html" style="border: none;" width="100%" height="300"></iframe>
             </div>
-        </div>
+                  </div>
         
           
           
@@ -61,28 +53,22 @@
     
         </div>
         </div>
-     
-        
+
         <script>
-        const cookieBox = document.querySelector(".CookieImage"),
-        acceptBtn = cookieBox.querySelector(".button1 button");
-
-        acceptBtn.onclick = ()=>{
-            document.cookie = "CyberCookie; max-age="+ 60*60*24*30;
-            if(document.cookie){
-                cookieBox.classList.add("hide");
-                console.log("Button clicked");
-            }else{
-                alert("Cookie can't be set")
+            // Check for the presence of the cookie and hide the cookie box if found
+            const verifyCookie = document.cookie.indexOf("CyberCookie");
+            if (verifyCookie !== -1) {
+                document.querySelector("#cookie-consent").classList.add("hide");
             }
-            
-
-        }
-
-        // hide the cookie box if cookie is set and not expired
-        let verifyCookie = document.cookie.indexOf("CyberCookie");
-        verifyCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
-    </script>
+    
+            const acceptBtn = document.querySelector(".button button");
+            acceptBtn.onclick = () => {
+                // Set the cookie without an explicit expiration date
+                document.cookie = "CyberCookie";
+                // Hide the cookie box
+                document.querySelector("#cookie-consent").classList.add("hide");
+            };
+        </script>
 
         
         

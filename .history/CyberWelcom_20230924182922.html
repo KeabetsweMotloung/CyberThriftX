@@ -12,23 +12,15 @@
         <title>CyberThriftXHomePage</title>
         <link rel = "stylesheet" href="Welcomepage.css">
 
-        <!-- <script src="hideCookie.js"></script> -->
+        <script src="hideCookie.js"></script>
     </head>
 
     <body>
-        <div class="CookieImage">
-            <a href="#"><img src="cookie.png" alt="Cyber cookie image"></a>
-        
-            <div class="cookieContent">
-                <header>Cyber Cookie Consent</header>
-                <p>We use essential cookies to make our site work. With your consent, we may also use non-essential cookies to improve user experience and analyze website traffic. By clicking “Accept,“ you agree to our website's cookie use as described in our Cookie Policy. You can change your cookie settings at any time by clicking “Preferences.”</p>
-        
-                <div class="button1">
-                    <button class="Agree">I Agree</button>
-                    <a href="#" class="Learn">Learn More</a>
-                </div>
+        <div id="cookie-container">
+            <div id="cookie-consent">
+                <iframe src="cookie.html" style="border: none;" width="100%" height="300"></iframe>
             </div>
-        </div>
+                  </div>
         
           
           
@@ -61,28 +53,17 @@
     
         </div>
         </div>
-     
-        
+
         <script>
-        const cookieBox = document.querySelector(".CookieImage"),
-        acceptBtn = cookieBox.querySelector(".button1 button");
+            const cookieBox = document.querySelector(".cookie-container"),
+            acceptBtn = cookieBox.querySelector(".button button");
 
-        acceptBtn.onclick = ()=>{
-            document.cookie = "CyberCookie; max-age="+ 60*60*24*30;
-            if(document.cookie){
-                cookieBox.classList.add("hide");
+            acceptBtn.onclick = ()=>{
+                d
                 console.log("Button clicked");
-            }else{
-                alert("Cookie can't be set")
+
             }
-            
-
-        }
-
-        // hide the cookie box if cookie is set and not expired
-        let verifyCookie = document.cookie.indexOf("CyberCookie");
-        verifyCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
-    </script>
+        </script>
 
         
         

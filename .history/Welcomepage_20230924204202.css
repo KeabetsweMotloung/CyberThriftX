@@ -10,13 +10,6 @@
 }
 
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
 body {
   /* Add a background-color or image if needed */
   background-color: #f0f0f0;
@@ -39,9 +32,9 @@ body {
   align-items: center; /* Center content vertically within .CookieImage */
 }
 
-.CookieImage img {
+/* .CookieImage img {
   max-width: 90px;
-}
+} */
 
 .cookieContent {
   margin-top: 10px;
@@ -67,7 +60,7 @@ body {
   padding: 10px;
 }
 
-.button button {
+.button1 button {
   padding: 10px 20px;
   border: none;
   outline: none;
@@ -80,6 +73,10 @@ body {
   visibility: hidden;
   display: none;
 }
+
+
+
+
 
 
 *{
