@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('your-background-image.jpg'); /* Replace 'your-background-image.jpg' with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent the background from scrolling */
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    align-items: center;
+}
+
+#cookie-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Use a semi-transparent white background for the cookie box */
+    max-width: 365px;
+    border-radius: 15px;
+    padding: 25px;
+    z-index: 1;
+    backdrop-filter: blur(10px); /* Add a blurred effect to the background */
+}
+
+#cookie-consent.hide {
+    display: none;
+}
+#cookie-consent {
+    text-align: center;
+    background: #fff;
+    max-width: 365px;
+    border-radius: 15px;
+    padding: 10px; /* Reduce padding to allow more space for content */
+    z-index: 1; /* Set a higher z-index value to place it on top */
+  }
+  
+  .cookieContent p {
+    color: #858585;
+    background-color: aliceblue;
+    padding: 10px; /* Adjust padding as needed */
+  }
+  
+  .cookieContent .button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; /* Adjust padding as needed */
+  }
+  
