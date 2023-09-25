@@ -1,10 +1,10 @@
 import json
-from nlik_utils import tokenize,stem,bag_of_words
+from nlik_util.py import tokenize,stem,bag_of_words
 
 with open('ChatBot/Intents.json','r') as file:
     intents = json.load(file)
 
-
+print(intents)
 
 tokenized_pattern = []
 tags=[]
@@ -20,9 +20,4 @@ for request in intents['intents']:
         tuple_tokens_tag.append((token_pattern,tag))
 
  
-blind_Characters = ['!','.',',','!','?']
-
-tokenized_pattern=[stem(token_pattern) for token_pattern in tokenized_pattern if token_pattern not in blind_Characters]
-tokenized_pattern = sorted(set(tokenized_pattern))
-tags = sorted(set(tags))
-print(tags)
+blind_Characters = ['!','.']

@@ -24,5 +24,5 @@ blind_Characters = ['!','.',',','!','?']
 
 tokenized_pattern=[stem(token_pattern) for token_pattern in tokenized_pattern if token_pattern not in blind_Characters]
 tokenized_pattern = sorted(set(tokenized_pattern))
-tags = sorted(set(tags))
-print(tags)
+
+print(tokenized_pattern)

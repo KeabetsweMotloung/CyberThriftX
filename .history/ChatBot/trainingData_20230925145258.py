@@ -20,9 +20,7 @@ for request in intents['intents']:
         tuple_tokens_tag.append((token_pattern,tag))
 
  
-blind_Characters = ['!','.',',','!','?']
+blind_Characters = ['!','.',',','!']
 
-tokenized_pattern=[stem(token_pattern) for token_pattern in tokenized_pattern if token_pattern not in blind_Characters]
-tokenized_pattern = sorted(set(tokenized_pattern))
-tags = sorted(set(tags))
-print(tags)
+tokenized_pattern=[stem(token_pattern) for token_pattern in tokenized_pattern]for stem(token_pattern) in tokenized_pattern :
+    if 
