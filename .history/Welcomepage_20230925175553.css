@@ -260,7 +260,7 @@ left: 20px;
 
 
 .heading img {
-  max-height: 800px;
+  max-height: 800px; /* Adjust the maximum height as neede
   display: block;
   margin: 0 auto;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));

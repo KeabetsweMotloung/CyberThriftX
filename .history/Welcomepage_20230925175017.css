@@ -257,26 +257,50 @@ left: 20px;
 /* Your existing CSS code here */
 
 /* Center the Style Collection section */
-
-
-.heading img {
-  max-height: 800px;
-  display: block;
-  margin: 0 auto;
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
-  transition: transform 0.3s, filter 0.3s;
+..Collection {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9); /* Add a background color to make it stand out */
+    border-radius: 15px;
+    position: relative; /* Use relative positioning to layer it over the background */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2; /* Ensure it's above the background */
 }
 
-.heading img:hover {
-  transform: scale(1.1); 
-  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.7));
+ .Collection {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9); /* Add a background color to make it stand out */
+    border-radius: 15px;
+    position: relative; /* Use relative positioning to layer it over the background */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2; /* Ensure it's above the background */
 }
 
-
-.Collection {
-  text-align: center;
-  padding: 40px;
+ .Collection {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9); /* Add a background color to make it stand out */
+    border-radius: 15px;
+    position: relative; /* Use relative positioning to layer it over the background */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2; /* Ensure it's above the background */
 }
+
+}.Collection {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9); /* Add a background color to make it stand out */
+    border-radius: 15px;
+    position: relative; /* Use relative positioning to layer it over the background */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2; /* Ensure it's above the background */
+}
+
 
 .image-container {
   display: flex;

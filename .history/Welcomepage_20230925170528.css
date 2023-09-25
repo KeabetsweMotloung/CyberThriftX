@@ -253,69 +253,15 @@ left: 20px;
   }
 
 
+  /* HERO IMAGE */
+
+  .hero{
+    background-image:url("Theme/Z-a40s_D.jpeg");
+    height: 90vh;
+    width: 100%;
+    background-size:cover;
+    background-position:top 25% right 0;
+  }
+
+
   
-/* Your existing CSS code here */
-
-/* Center the Style Collection section */
-
-
-.heading img {
-  max-height: 800px;
-  display: block;
-  margin: 0 auto;
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
-  transition: transform 0.3s, filter 0.3s;
-}
-
-.heading img:hover {
-  transform: scale(1.1); 
-  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.7));
-}
-
-
-.Collection {
-  text-align: center;
-  padding: 40px;
-}
-
-.image-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.home {
-  width: 23%;
-  min-width: 250px;
-  padding: 10px 12px;
-  border: 1px solid white;
-  border-radius: 25px;
-  cursor: pointer;
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-  margin: 15px;
-  transition: 0.2s ease;
-  text-align: center;
-}
-
-/* Add styling for your images and descriptions as needed */
-.home img {
-  width: 100%;
-  border-radius: 20px;
-}
-
-.home .description {
-  text-align: start;
-  padding: 10px 0;
-  margin-top: 10px;
-}
-
-.home .description h5 {
-  padding-top: 7px;
-  color: white;
-  font-size: 14px;
-}
-
-.home .description .star i.fas.fa-star {
-  color: yellow !important;
-}

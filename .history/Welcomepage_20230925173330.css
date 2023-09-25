@@ -253,69 +253,77 @@ left: 20px;
   }
 
 
-  
-/* Your existing CSS code here */
-
-/* Center the Style Collection section */
-
-
+  /* Apply Y2K street art-inspired styles to the image */
 .heading img {
-  max-height: 800px;
+  max-height: 800px; /* Adjust the maximum height as needed */
   display: block;
   margin: 0 auto;
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)); /* Add a drop shadow */
   transition: transform 0.3s, filter 0.3s;
 }
 
 .heading img:hover {
-  transform: scale(1.1); 
-  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.7));
+  transform: scale(1.1); /* Zoom in slightly on hover */
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.7)); /* Increase the drop sha
 }
 
 
-.Collection {
-  text-align: center;
-  padding: 40px;
+
+
+
+  /* adds images and space  */
+  .A1 {
+    text-align: center;
 }
 
-.image-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
+.A1 .image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.home {
-  width: 23%;
-  min-width: 250px;
-  padding: 10px 12px;
-  border: 1px solid white;
-  border-radius: 25px;
-  cursor: pointer;
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-  margin: 15px;
-  transition: 0.2s ease;
-  text-align: center;
+.A1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid white;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0,0,02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    text-align: center;
 }
 
-/* Add styling for your images and descriptions as needed */
-.home img {
-  width: 100%;
-  border-radius: 20px;
+.A1 .pro:hover {
+  box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+
 }
 
-.home .description {
+
+.A1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.A1 .pro .description {
   text-align: start;
   padding: 10px 0;
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
-.home .description h5 {
+
+.A1 .pro .description h5 {
   padding-top: 7px;
   color: white;
   font-size: 14px;
+
 }
 
-.home .description .star i.fas.fa-star {
+.A1 .pro .description .star i.fas.fa-star {
   color: yellow !important;
 }
+
+
+
+  
