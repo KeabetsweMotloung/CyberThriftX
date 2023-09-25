@@ -48,7 +48,7 @@ body {
 
 .cookieContent {
   margin-top: 10px;
-  text-align: center; /* Center the text inside the popup */
+  text-align: left;
 }
 
 .cookieContent header {
