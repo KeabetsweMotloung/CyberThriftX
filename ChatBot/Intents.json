@@ -1,0 +1,59 @@
+{
+    "intents": [
+        {
+            "tag": "Greeting",
+            "patterns": [
+                "Hey",
+                "Hello",
+                "Hi",
+                "Is anyone here",
+                "Good day"
+            ],
+
+            "responses": [
+                "Hey ;-)",
+                "Hello and thanks for visting our Website.",
+                "Hey there ;-), What can I do for you ? ",
+                "Hey there ;-), How can i help you?",
+                "Hey there ;-) thanks for visiting how may i be of assistance?"
+            ]
+        },
+
+
+        {
+            "tag":"goodbye",
+            "patterns": ["Bye","See you later","Good bye"],
+            "responses":["See you later,thanks for visting","Have a nice day","Bye! Come back again soon."]
+        },
+        
+        {
+            "tag":"thanks",
+            "patterns":["Thanks","Thank you","That's helpful","Thanks a lot!"],
+            "responses":["Happy to help :-)","Any Time","My pleasure"]
+        },
+
+        {
+            "tag":"requests",
+            "patterns":["Which kind of items do you have?","Are your items brand new?","How long is delivery time?","Do you have an instagram account?",
+            "What is your return policy for store purchases","Do you accept clothing donations?",
+            "Do you offer international shipping?","Do you have discount codes?","Are you size inclusive?"],
+            "responses":["We specialize in offering a wide range of clothing items, each with unique aesthetics to suit various tastes and styles.We carry clothing items in various aesthetics, including vintage dresses, bohemian tops, retro denim, and modern streetwear.",
+            "Our inventory includes a mix of items. We offer both brand new items and thrifted items in excellent condition. Whether you're looking for something new or unique, we have options to suit your preferences.",
+            "The delivery time depends on the delivery option you choose. Typically, our delivery times can range from 3 to 9 days, especially when using Paxi. The specific timeframe will vary based on your selected delivery method and location.",
+            "Yes, we do have an Instagram account. You can find us @YourThriftStoreHandle. Follow us for the latest updates, fashion inspiration, and exclusive promotions.",
+            "Our return policy allows for exchanges only. We do not offer refunds. If you'd like to exchange an item, we can accommodate your request as long as the desired item is still available.",
+            "Yes, we gladly accept clothing donations. Your donations go towards supporting our local community, as we donate to orphanages and organizations in the surrounding areas. Your contributions make a positive impact!",
+            "Currently, we only offer delivery within South Africa and do not provide international shipping services.",
+            "Absolutely! We offer various discount codes to help you save. Please visit our discount code page for more details and available promotions.",
+            "Indeed, we take pride in our commitment to size inclusivity. Our collection encompasses a wide array of sizes to cater to all body types, ensuring that everyone can find their perfect fit."]
+        },
+
+
+        
+        {
+            "tag":"Payments",
+            "patterns":["How can i pay?"],
+            "responses":["you can use our Yaga Store or pay via our business account"]
+        }
+    ]
+}

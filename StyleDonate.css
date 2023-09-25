@@ -1,0 +1,80 @@
+
+
+li{
+    display: inline;
+    float: right;
+   position: relative;
+    padding: 14px 16px;
+  }
+  li a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    transition: 0,3s ease;
+    background:black;
+    
+    padding: 40px 80px;
+    text-decoration: none;
+  }
+  
+  
+  /* Apply color change on hover and active */
+  li a:hover,
+  li a:active {
+    color: aqua;
+  }
+  
+  /* Add the underline-like effect when hovering and active */
+  li a:active::after,
+  li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: aqua;
+    position: absolute;
+    bottom: -2px;
+    left: 20px;
+  }
+  
+  
+  /* SCROLL BAR */
+  ::-webkit-scrollbar{
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px grey;
+    border-radius:10px;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background: red;
+    border-radius: 10px;
+  }
+  
+  .Background{
+      width: 100%;
+      height: 900vh;
+      /* Example */
+      background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(THRIFTBG.png);
+  
+      background-size: cover;
+      background-position: center;
+  
+  }
+
+  .head img {
+    max-height: 800px; /* Adjust the maximum height as needed */
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)); /* Add a drop shadow */
+    transition: transform 0.3s, filter 0.3s;
+  }
+  
+  .head img:hover {
+    transform: scale(1.1); /* Zoom in slightly on hover */
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.7)); /* Increase the drop shadow on hover */
+  }
