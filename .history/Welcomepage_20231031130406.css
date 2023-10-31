@@ -321,6 +321,6 @@ left: 20px;
   font-size: 14px;
 }
 
-.Collection .home .description .star i.fas.fa-star {
+.home .description .star i.fas.fa-star {
   color: yellow !important;
 }

@@ -272,9 +272,7 @@ left: 20px;
   transform: scale(1.1); 
   filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.7));
 }
-
-
-/*HOME PAGE IMAGES  */
+/*  */
 
 
 .Collection {
@@ -283,14 +281,14 @@ left: 20px;
   
 }
 
-.Collection .image-container {
+.image-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.Collection .home {
+.home {
   width: 23%;
   min-width: 250px;
   padding: 10px 12px;
@@ -304,23 +302,23 @@ left: 20px;
 }
 
 /* Add styling for your images and descriptions as needed */
-.Collection .home img {
+.home img {
   width: 100%;
   border-radius: 20px;
 }
 
-.Collection .home .description {
+.home .description {
   text-align: start;
   padding: 10px 0;
   margin-top: 10px;
 }
 
-.Collection .home .description h5 {
+.home .description h5 {
   padding-top: 7px;
   color: white;
   font-size: 14px;
 }
 
-.Collection .home .description .star i.fas.fa-star {
+.home .description .star i.fas.fa-star {
   color: yellow !important;
 }

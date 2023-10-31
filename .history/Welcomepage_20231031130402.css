@@ -315,12 +315,12 @@ left: 20px;
   margin-top: 10px;
 }
 
-.Collection .home .description h5 {
+.home .description h5 {
   padding-top: 7px;
   color: white;
   font-size: 14px;
 }
 
-.Collection .home .description .star i.fas.fa-star {
+.home .description .star i.fas.fa-star {
   color: yellow !important;
 }
