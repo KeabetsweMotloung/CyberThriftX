@@ -283,6 +283,11 @@ left: 20px;
   
 }
 
+.Collection h2{
+  font-size: 34px;
+  color:white;
+}
+
 .Collection .image-container {
   display: flex;
   justify-content: center;
@@ -294,8 +299,9 @@ left: 20px;
   width: 23%;
   min-width: 250px;
   padding: 10px 12px;
-  border: 1px solid white;
-  border-radius: 25px;
+  /* border: 1px solid white; */
+  border: none;
+  /* border-radius: 25px; */
   cursor: pointer;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
   margin: 15px;
@@ -305,7 +311,10 @@ left: 20px;
 
 /* Add styling for your images and descriptions as needed */
 .Collection .home img {
-  width: 100%;
+  width: 300px;
+  height: 300px; 
+  /* object-fit: cover;  */
+  
   border-radius: 20px;
 }
 
@@ -321,6 +330,6 @@ left: 20px;
   font-size: 14px;
 }
 
-.Collection .home .description .star i.fas.fa-star {
-  color: yellow !important;
+body .Collection .home .description .star i.fas.fa-star {
+  color: yellow;
 }
