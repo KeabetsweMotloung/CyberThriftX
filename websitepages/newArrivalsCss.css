@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+
+}
+.banner{
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+    background-size: cover;
+    background-position: center;
+
+}
+.Navigation{
+    width: 85%;
+    margin: auto;
+    padding: 15px 0;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.logo{
+    width: 200px;
+    cursor: pointer;
+}
+.Navigation ul li{
+    list-style: none;
+    font-size: 22px;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.Navigation ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.Navigation ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: grey;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.Navigation ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff
+    
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button{
+    width:200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background:transparent;
+    position:relative;
+    color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+span{
+    background: #009688;
+    height: 100%;
+    border-radius: 25px;
+    position: absolute;
+    transition: .3s;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+button:hover span{
+    width:100%
+}
+button:hover{
+    border: none;
+}
+
+.heading img {
+    max-height: 800px; /* Adjust the maximum height as needed */
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)); /* Add a drop shadow */
+    transition: transform 0.3s, filter 0.3s;
+  }
+  
+  .heading img:hover {
+    transform: scale(1.1); /* Zoom in slightly on hover */
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.7)); /* Increase the drop shadow on hover */
+  }
+  
+  
+  
+  
+  
+    /* adds images and space  */
+    .A1 {
+      text-align: center;
+  }
+  
+  .A1 .image-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+  
+  .A1 .pro {
+      width: 23%;
+      min-width: 250px;
+      padding: 10px 12px;
+      border: 1px solid white;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 20px 20px 30px rgba(0, 0, 0,0,02);
+      margin: 15px 0;
+      transition: 0.2s ease;
+      text-align: center;
+  }
+  
+  .A1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+  
+  }
+  
+  
+  .A1 .pro img {
+    width: 400px;
+    height: 400px; 
+      border-radius: 20px;
+  }
+  
+  .A1 .pro .description {
+    text-align: start;
+    padding: 10px 0;
+      margin-top: 10px;
+  }
+  
+  
+  .A1 .pro .description h5 {
+    padding-top: 7px;
+    color: white;
+    font-size: 14px;
+  
+  }
+  
+  .A1 .pro .description .star i.fas.fa-star {
+    color: yellow !important;
+  }
+
+
+  /* DROPDOWN BUTTON */
+
+
+.dropbutton {
+  background-color: white;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+/* .dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+} */
+
+/* The search field */
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+/* The search field when it gets focus/clicked on */
+#myInput:focus {outline: 3px solid #ddd;}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  text-align: center;
+  margin-top: 100px;
+  position: center;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+  
+  
+  
+  
+  
+  
+  
+  /* SCROLL BAR */
+  ::-webkit-scrollbar{
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px grey;
+    border-radius:10px;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background:grey;
+    border-radius: 10px;
+  }
+  

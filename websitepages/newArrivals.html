@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+
+        <title>CyberThriftXHomePage</title>
+        <link rel = "stylesheet" href="newArrivalsCss.css">
+
+        <script src="newArrivals.js" defer></script>
+
+        <!-- <script src="hideCookie.js"></script> -->
+    </head>
+
+    <body>
+        <div class="banner">
+            <div class="Navigation">
+                <img src="/NEW_PINK_PRINT_4_-removebg-preview.png" class="logo">
+                <ul>
+                    <li><a href="/websitepages/landingPage.html">Home</a></li>
+                    <li><a href="/websitepages/newArrivals.html">New Arrivals</a></li>
+                    <li><a href="/websitepages/donate.html">Donate</a></li>
+                    <li><a href="/websitepages/aboutus.html">About Us</a></li>
+                    <li><a href="/websitepages/shoppingCart.html">Cart</a></li>
+                </ul>
+            </div>
+            <div class="heading">
+      
+
+                <a href="#"><img src="/THRIFTBG_8_-removebg-preview.png" alt="CyberIcon"></a>
+              
+      
+           
+      
+             
+      
+      
+                     
+        </div>
+        </div>
+
+        <hr>
+
+
+        <!-- FILTER AND SEARCH-->
+
+
+       <!-- Search bar and dropdown -->
+       <div class="dropdown">
+        <input type="text" placeholder="Search..." id="myInput" oninput="filterFunction()">
+        <label for="sizeFilter">Size:</label>
+        <select id="sizeFilter" onchange="filterFunction()">
+            <option value="All">All</option>
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+            <option value="Extra-large">Large</option>
+        </select>
+
+
+        <label for="colorFilter">Color:</label>
+        <select id="colorFilter" onchange="filterFunction()">
+            <option value="All">All</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Green">Green</option>
+            <option value="Pink">Green</option>
+        </select>
+
+        
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#T-Shirts" data-size="small" data-color="red">T-Shirts (Small, Red)</a>
+            <a href="#Tops" data-size="medium" data-color="blue">Tops (Medium, Blue)</a>
+            <a href="#Skirts" data-size="large" data-color="green">Skirts (Large, Green)</a>
+            <!-- Add more items with data-size and data-color attributes -->
+        </div>
+    </div>
+    
+
+
+
+        
+        
+    </body>
